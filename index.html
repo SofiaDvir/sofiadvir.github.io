@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sofia Dvir</title>
+	<link rel="icon" type="image/jpg" href="https://i.pinimg.com/originals/4c/35/df/4c35df49e0e593c9fffe2ac99ab4c3b9.jpg">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<style>
+		body {
+			background-color: #121212;
+			color: #fff;
+			font-family: Arial, sans-serif;
+		}
+
+		.jumbotron {
+			background-color: rgba(0, 0, 0, 0.4);
+			background-size: cover;
+			background-position: center;
+			color: #fff;
+			text-align: center;
+			padding: 100px 0;
+			position: relative;
+		}
+
+		.jumbotron::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-image: url('SofiaDesktop.png');
+			background-size: cover;
+			background-position: center;
+			filter: blur(2px);
+			z-index: -1;
+		}
+
+		.social-icons {
+			font-size: 3rem;
+			margin: 20px;
+			color: #fff;
+		}
+
+		.portfolio-item {
+			margin-bottom: 50px;
+		}
+
+		.portfolio-item img {
+			width: 100%;
+			border-radius: 10px;
+			transition: transform 0.3s ease-in-out;
+		}
+
+		.portfolio-item img:hover {
+			transform: scale(1.05);
+		}
+
+		.section-heading {
+			font-size: 3rem;
+			margin-bottom: 30px;
+			color: #fff;
+		}
+
+		.text-muted {
+			color: rgba(255, 255, 255, 0.7);
+		}
+
+		footer {
+			background-color: #343a40;
+		}
+
+		footer p {
+			margin-bottom: 0;
+		}
+
+		/* Mobile background image */
+		@media (max-width: 991px) {
+			.jumbotron::before {
+				background-image: url('SofiaMobile.jpeg');
+			}
+		}
+	</style>
+
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+				<i class="fas fa-music"></i>&nbsp;Sofia Dvir
+			</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">My Music</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header - Jumbotron -->
+    <header class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Welcome to DJ Sofia's World</h1>
+            <p class="lead">Showcasing the best beats and mixes!</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/sofia.dvir/" target="_blank"><i class="fab fa-facebook" style="color: #ffffff;"></i></a>
+                <a href="https://www.instagram.com/sofiadvirdj/"  target="_blank"><i class="fab fa-instagram" style="color: #ffffff;"></i></a>
+                <a href="https://soundcloud.com/user-270043398" target="_blank"><i class="fab fa-soundcloud" style="color: #ffffff;"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h2 class="section-heading">About Me</h2>
+                <p class="text-muted">Mother of five amazing kids. DJ, Stand-up Comedian, Actress and a Lawyer.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h2 class="section-heading">My Music</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 portfolio-item">
+                <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1231943608&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/user-270043398" title="Sofia Dvir" target="_blank" style="color: #cccccc; text-decoration: none;">Sofia Dvir</a> · <a href="https://soundcloud.com/user-270043398/floating" title="FLOATING" target="_blank" style="color: #cccccc; text-decoration: none;">FLOATING</a></div>
+            </div>
+            <div class="col-md-4 portfolio-item">
+                <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1215109519&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/user-270043398" title="Sofia Dvir" target="_blank" style="color: #cccccc; text-decoration: none;">Sofia Dvir</a> · <a href="https://soundcloud.com/user-270043398/2022-02-13-17h11m34" title=".&quot;DJ SOFIA DVIR - #MixMeUp COMPETITION 2022" target="_blank" style="color: #cccccc; text-decoration: none;">.&quot;DJ SOFIA DVIR - #MixMeUp COMPETITION 2022</a></div>
+            </div>
+            <div class="col-md-4 portfolio-item">
+                <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1217383501&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/user-270043398" title="Sofia Dvir" target="_blank" style="color: #cccccc; text-decoration: none;">Sofia Dvir</a> · <a href="https://soundcloud.com/user-270043398/woman-in-love" title="woman in love" target="_blank" style="color: #cccccc; text-decoration: none;">woman in love</a></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h2 class="section-heading">Contact Me</h2>
+                <p class="text-muted">Ready to book? Let's get in touch!</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 mx-auto text-center">
+                <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
+                <p><a href="mailto:contact@sofiadvir.com">contact@sofiadvir.com</a></p>
+				
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 text-center">
+        <div class="container">
+            <p>&copy; 2024 Sofia Dvir. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
