@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="robots" content="noindex, nofollow">
+	<title>DJ Sofia Dvir</title>
+	<link rel="icon" type="image/jpg" href="https://i.pinimg.com/originals/4c/35/df/4c35df49e0e593c9fffe2ac99ab4c3b9.jpg">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<style>
+	    .display-4 {
+			font-weight: bold;
+		}
+		body {
+			background-color: #121212;
+			color: #fff;
+			font-family: Arial, sans-serif;
+		}
+
+		.jumbotron {
+			background-color: rgba(0, 0, 0, 0.4);
+			background-size: cover;
+			background-position: center;
+			color: #fff;
+			text-align: center;
+			padding: 100px 0;
+			position: relative;
+		}
+
+		.jumbotron::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-image: url('../SofiaDesktop.png');
+			background-size: cover;
+			background-position: center;
+			filter: blur(2px);
+			z-index: -1;
+		}
+
+		.social-icons {
+			font-size: 3rem;
+			margin: 20px;
+			color: #fff;
+		}
+
+		.portfolio-item {
+			margin-bottom: 50px;
+		}
+
+		.portfolio-item img {
+			width: 100%;
+			border-radius: 10px;
+			transition: transform 0.3s ease-in-out;
+		}
+
+		.portfolio-item img:hover {
+			transform: scale(1.05);
+		}
+
+		.section-heading {
+			font-size: 3rem;
+			margin-bottom: 30px;
+			color: #fff;
+		}
+
+		.text-muted {
+			color: rgba(255, 255, 255, 0.7);
+		}
+
+		footer {
+			background-color: #343a40;
+		}
+
+		footer p {
+			margin-bottom: 0;
+		}
+
+		button {
+			padding: 10px 20px;
+			background-color: #0073aa;
+			color: white;
+			border: none;
+			cursor: pointer;
+			border-radius: 5px;
+		}
+		button:hover {
+			background-color: #005a8e;
+		}
+
+		/* Mobile background image */
+		@media (max-width: 991px) {
+			.jumbotron::before {
+				background-image: url('../SofiaMobile.jpeg');
+			}
+		}
+	</style>
+
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="https://sofiadvir.com/">
+				<i class="fas fa-music"></i>&nbsp;Sofia Dvir
+			</a>
+        </div>
+    </nav>
+
+    <!-- Header - Jumbotron -->
+    <header class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4" style=>Join Sofia's Inner Circle for Exclusive Content</h1>
+            <p class="lead">This is only applicable for <strong>Indian / UPI users</strong>. Others please use - <a href="https://im.page/f2ec04fc">click here</a></p>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h3 class="section-heading">Join Telegram Group</h3>
+                <p class="text-center">Use below QR or UPI ID to complete payment. Add below note/remark/message in the payment. <strong>Do NOT add anything else.</strong> Once done, share a screenshot of your payment to this Telegram account <a href="https://telegram.me/suprabo">@SupraBo</a>. You will be added to the group.</p>
+            </div>
+        </div>
+		<div class="row">
+			<div class="col-lg-8 mx-auto text-center">
+				<span style="font-size:21px"><strong>Monthly Amount</strong>: </span><span id="usdRateDisplay"></span>
+			</div>
+            <div class="col-lg-8 mx-auto text-center" style="padding-top: 20px">
+				<span style="font-size:21px"><strong>UPI ID:</strong></span>
+				<span id="upi-copy" style="font-size:21px">sircommunity@axl</span>
+				<button id="upi-button" onclick="copyUPItext()">Click to copy UPI</button>
+            </div>
+			<div class="col-lg-8 mx-auto text-center" style="padding-top: 20px">
+				<span style="font-size:21px"><strong>Note/Remark:</strong></span>
+  				<span id="text-to-copy" style="font-size:21px">December Class</span>
+  				<button id="copy-button" onclick="copyText()">Copy Note</button>
+			</div>
+			<div class="col-lg-8 mx-auto text-center" style="padding-top: 20px">
+				<span style="font-size:21px"><strong>QR</strong> (works with PhonePe, G Pay & all other apps):</span>
+			</div>
+			<div class="col-lg-8 mx-auto text-center" style="padding-top: 15px;">
+				<!-- SBI -->
+				<!--<img src="https://www.saveinvestrepeat.com/wp-content/uploads/2024/08/sbi.jpg" alt="Description of the image" width="300" height="300">-->
+				<!-- IDFC -->
+				<img src="http://www.saveinvestrepeat.com/wp-content/uploads/2024/09/IDFC.jpg" alt="Description of the image" width="300" height="300">
+			</div>
+			<div class="col-lg-8 mx-auto text-center" style="padding-top: 15px; padding-bottom: 20px;">
+				<span style="font-size:15px">Once payment is done, share a screenshot of your payment to this Telegram account <a href="https://telegram.me/suprabo">@SupraBo</a>. You will be added to the group within 10 hours.</span>	
+			</div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 text-center">
+        <div class="container">
+            <p>&copy; 2024 Sofia Dvir. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script>
+		function copyUPItext() {
+		  var textToCopy = document.getElementById("upi-copy").innerText;
+		  var tempTextarea = document.createElement("textarea");
+		  tempTextarea.value = textToCopy;
+		  document.body.appendChild(tempTextarea);
+		  tempTextarea.select();
+		  document.execCommand("copy");
+		  document.body.removeChild(tempTextarea);
+		  var button = document.getElementById("upi-button");
+		  button.innerText = "UPI ID Copied!";
+		  setTimeout(function() {
+			button.innerText = "Copy UPI ID";
+		  }, 2000);
+		}
+
+		function copyText() {
+			var textToCopy = document.getElementById("text-to-copy").innerText;
+			var tempTextarea = document.createElement("textarea");
+			tempTextarea.value = textToCopy;
+			document.body.appendChild(tempTextarea);
+			tempTextarea.select();
+			document.execCommand("copy");
+			document.body.removeChild(tempTextarea);
+			var button = document.getElementById("copy-button");
+			button.innerText = "Note Copied!";
+			setTimeout(function() {
+			button.innerText = "Copy Note";
+			}, 2000);
+		}
+
+		async function fetchUSDToINRRate() {
+			try {
+				// Fetch current exchange rate from a free API
+				const response = await fetch('https://api.exchangerate-api.com/v4/latest/USD');
+				const data = await response.json();
+				
+				// Get the current USD to INR exchange rate
+				const exchangeRate = data.rates.INR;
+				
+				// Calculate USD in INR and round up to nearest whole number
+				const inrValue = Math.ceil(exchangeRate * 3.5);
+				
+				// Find the display element
+				const rateDisplay = document.getElementById('usdRateDisplay');
+				
+				if (rateDisplay) {
+					// Update the display with the rounded INR value
+					rateDisplay.innerHTML = `
+						<span style="font-size:25px">₹${inrValue}</span>
+					`;
+				}
+			} catch (error) {
+				console.error('Error fetching exchange rate:', error);
+				
+				// Find the display element
+				const rateDisplay = document.getElementById('usdRateDisplay');
+				
+				if (rateDisplay) {
+					// Update with error message
+					rateDisplay.innerHTML = `
+						<strong class="text-danger">Rate Unavailable</strong>
+					`;
+				}
+			}
+		}
+
+        // Call the function when the page loads
+        document.addEventListener('DOMContentLoaded', fetchUSDToINRRate);
+	</script>
+</body>
+
+</html>
